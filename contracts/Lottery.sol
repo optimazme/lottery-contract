@@ -22,6 +22,7 @@ contract nftLotteryForTheMazePassPurchaser {
         _passHasBeenPurchased = passHasBeenPurchased;
     }
 
+// comment test
     // We are checking whether a user has purchased a pass to join the lottery
     // I think it needs to be public 
     function enterLottery(bool) public payable {
@@ -33,7 +34,7 @@ contract nftLotteryForTheMazePassPurchaser {
     }
 
     // For the sake of simplicity, this function checks if a rn is below 50 and a user wins the lottery
-    function pickLotteryWinner() external {
+    function pickLotteryWinner(address ) external payable {
         // Question : How can I call a function to get a rn? 
         importSeedFromThird();
         // Question : How can I insert the called rn into the below if else statement?
